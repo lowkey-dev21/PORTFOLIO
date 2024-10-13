@@ -46,7 +46,7 @@ const AboutCom = () => {
 
         {/* Tools */}
         <div className=" tools-container">
-          <div className="scrolling-text "></div>
+          <div className="scrolling-text ">Your scrolling text</div>
         </div>
       </section>
     </>
