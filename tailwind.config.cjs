@@ -1,9 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ["./index.html", "./src/**/*.{ts,tsx}"],
   mode: "jit",
   theme: {
     extend: {
+      keyframes: {
+        "scroll-left": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        "scroll-left": "scroll-left 15s linear infinite",
+      },
       colors: {
         primary: "#00040f",
         secondary: "#00f6ff",
@@ -21,7 +30,7 @@ module.exports = {
       md: "1060px",
       lg: "1200px",
       xl: "1440px", // Adjusted for common larger screen resolutions
-      '2xl': "1700px",
+      "2xl": "1700px",
     },
   },
   plugins: [

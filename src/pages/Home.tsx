@@ -4,7 +4,7 @@ import { NavBar } from "../components";
 const Home = () => {
   return (
     <>
-      <section>
+      <section className=" w-full " >
         <span className=" container-bg ">
           <span className=" first-bg"></span>
           <span className=" second-bg"></span>
