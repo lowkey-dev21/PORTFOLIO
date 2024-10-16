@@ -27,7 +27,7 @@ const navLinks: Nav[] = [
 const NavBar = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 flex justify-center items-center max-w-[80%] mx-auto mt-[1rem] gap-6 p-1 navbar rounded-full bg-white shadow-lg">
+      <nav className="fixed top-0 left-0 right-0 flex px-3 justify-between items-center max-w-[80%] mx-auto mt-[1rem] gap-6 p-1 navbar rounded-full bg-white shadow-lg">
         {navLinks.map((link) => (
           <NavLink
             className="px-4 py-2 rounded transition-all"

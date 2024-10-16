@@ -13,6 +13,7 @@ import {
   reactJs,
   typeScript,
   vs,
+  tailwind,
 } from "../assets/index.ts";
 
 interface Scroller {
@@ -57,6 +58,10 @@ const scroller: Scroller[] = [
     img: reactJs,
   },
   {
+    title: "Tailwind",
+    img: tailwind,
+  },
+  {
     title: "TypeScript",
     img: typeScript,
   },
@@ -69,15 +74,15 @@ const scroller: Scroller[] = [
 const AboutCom = () => {
   return (
     <>
-      <section className=" pt-[4rem]  ">
-        <div className="initial-card about-profile ">
+      <section className=" pt-[4rem] mx-[1.1rem] pb-[2rem]   ">
+        <div className="  about-profile ">
           {/* Profilr */}
           <div className=" profile-items ">
             <img className=" avatar" src={avatar} alt="" />
             <h1 className="  text-xl  ">Lowkey Dev</h1>
 
             <p className=" info text-justify ">
-               I am a web developer fueled by creativity, thrive on building
+              I am a web developer fueled by creativity, thrive on building
               dynamic, responsive applications with React and Node.js.
               Passionate about turning ideas into interactive experiences.
               Driven by a love for problem-solving and seamless design.
@@ -112,8 +117,8 @@ const AboutCom = () => {
         </div>
 
         {/* Tools */}
-        <div className=" overflow-hidden initial-card justify-centeR items-cente  mt-[1rem] w-[90%] rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  ">
-          <div className=" overflow-hidden  justify-center items-center  mt-[1rem] w-[90%] rounded-[20px] h-[150px] mb-3 flex mx-auto ">
+        <div className=" overflow-hidden initial-card justify-centeR items-cente  mt-[1rem]  rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  ">
+          <div className=" overflow-hidden  justify-center items-center  mt-[1rem] w-[95%]  h-[150px] mb-3 flex mx-auto ">
             <Marquee speed={20} gradient={false}>
               {scroller.map((image) => (
                 <>
@@ -139,6 +144,24 @@ const AboutCom = () => {
               React | ExpressJs | MongoDB | Figma.
             </span>
           </p>
+        </div>
+
+        <div className=" text-[12px]  overflow-hidden  justify-center  rounded-[10px] initial-card gap-3 flex w-full items-center  ">
+          <Marquee speed={20} gradient={false}>
+            <div className="  flex items-center gap-3">
+              <div className=" items-center p-1 flex gap-2">
+                <span className=" font-light "> PERSONAL </span>
+                <i className="fa-brands  fa-square-js"></i>
+                <span className=" font-bold"> PORTFOLIO </span>
+                <span className=" font-light "> PERSONAL </span>
+                <i className="fa-brands  fa-square-js"></i>
+                <span className=" font-bold"> PORTFOLIO </span>
+                <span className=" font-light "> PERSONAL </span>
+                <i className="fa-brands  fa-square-js"></i>
+                <span className=" font-bold"> PORTFOLIO </span>
+              </div>
+            </div>
+          </Marquee>
         </div>
       </section>
     </>

@@ -1,6 +1,10 @@
+import WorkCom from "../components/WorkCom";
+
 const Work = () => {
   return (
-    <div>Work</div>
-  )
-}
-export default Work
+    <>
+      <WorkCom />;
+    </>
+  );
+};
+export default Work;

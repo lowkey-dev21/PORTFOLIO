@@ -9,4 +9,5 @@ export { default as reactJs } from "../assets/reactJs.png";
 export { default as typeScript } from "../assets/typeScript.png";
 export { default as vs } from "../assets/vs.png";
 export { default as html} from "../assets/html.png"
+export {default as tailwind} from "../assets/tailwind.png"
 

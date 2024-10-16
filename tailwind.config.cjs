@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      animation: {
+        "spin-slow": "spin 15s linear infinite", // 3s is the slower duration
+      },
       keyframes: {
         "scroll-left": {
           "0%": { transform: "translateX(100%)" },

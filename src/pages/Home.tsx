@@ -4,14 +4,14 @@ import { NavBar } from "../components";
 const Home = () => {
   return (
     <>
-      <section className=" w-full " >
+      <section className=" w-full ">
         <span className=" container-bg ">
-          <span className=" first-bg"></span>
-          <span className=" second-bg"></span>
-          <span className=" third-bg"></span>
-          <span className=" fourth-bg"></span>
-          <span className=" fifth-bg"></span>
-          <span className=" sixth-bg"></span>
+          <span className=" first-bg "></span>
+          <span className=" second-bg  "></span>
+          <span className=" third-bg  "></span>
+          <span className=" fourth-bg  "></span>
+          <span className=" fifth-bg "></span>
+          <span className=" sixth-bg  "></span>
         </span>
         <NavBar />
         <Outlet />
