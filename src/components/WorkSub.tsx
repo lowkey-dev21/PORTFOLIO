@@ -12,12 +12,18 @@ import {
   logistic,
 } from "../assets/index.ts";
 
+import { motion } from "framer-motion";
+import AboutCom from "./AboutCom.tsx";
 const WorkSub = () => {
   return (
     <>
       <section className=" md:flex md:justify-between gap-4 items-start flex-row-reverse   ">
         <div className=" md:w-[50%]  md:flex md:flex-col justify-between   gap-3  ">
-          <div className=" md:h-[100px]  initial-card flex items-center justify-between p-5 rounded-[12px]   ">
+          <motion.div
+            whileInView={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className=" md:h-[100px]  initial-card flex items-center justify-between p-5 rounded-[12px]   "
+          >
             <p className=" flex flex-col">
               <span className=" text-[10px]   text-gray-600">2024 CV</span>
               RESUME
@@ -41,9 +47,13 @@ const WorkSub = () => {
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-          </div>
+          </motion.div>
 
-          <div className=" gap-3 hidden md:flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   ">
+          <motion.div
+            whileInView={{ scale: [0.5, 1.2, 1], opacity: [0, 1] }}
+            transition={{ duration: 0.8, bounce: 0.4 }}
+            className=" gap-3 hidden md:flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   "
+          >
             <img
               src={logistic}
               className=" shadow-xl rounded-[10px]  w-full h-max-[350px]"
@@ -57,7 +67,7 @@ const WorkSub = () => {
                 </a>
                 <span>
                   <a href="https://lowkey-logistic.vercel.app/">
-                    <i className=" text-gray-500 fa-solid fa-link"></i>
+                    <i className=" text-blue-500 fa-solid fa-link"></i>
                   </a>
                 </span>{" "}
               </p>
@@ -74,10 +84,14 @@ const WorkSub = () => {
                 </span>
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className=" md:w-[50%] initial-card flex flex-col gap-[2rem] md:py-[3.5rem]  pb-[2rem]  justify-between md:mt-0 mt-4 p-5 rounded-[12px] ">
+        <motion.div
+          whileInView={{ rotateY: [180, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          className=" md:w-[50%] initial-card flex flex-col gap-[2rem] md:py-[3.5rem]  pb-[2rem]  justify-between md:mt-0 mt-4 p-5 rounded-[12px] "
+        >
           <p className=" flex flex-col">
             <span className="text-[10px]   text-gray-600">3 YEARS OF</span>
             <span>EXPERIENCE</span>
@@ -205,10 +219,14 @@ const WorkSub = () => {
               />
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Mobile */}
-        <div className=" cursor-pointer gap-3 md:hidden flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   ">
+        <motion.div
+          whileInView={{ scale: [0.5, 1.2, 1], opacity: [0, 1] }}
+          transition={{ duration: 0.8, bounce: 0.4 }}
+          className=" cursor-pointer gap-3 md:hidden flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   "
+        >
           <img
             src={logistic}
             className=" shadow-xl rounded-[10px]  w-full h-max-[350px]"
@@ -222,7 +240,7 @@ const WorkSub = () => {
               </a>
               <span>
                 <a href="https://lowkey-logistic.vercel.app/">
-                  <i className=" text-gray-500 fa-solid fa-link"></i>
+                  <i className=" text-blue-500 fa-solid fa-link"></i>
                 </a>
               </span>{" "}
             </p>
@@ -239,12 +257,15 @@ const WorkSub = () => {
               </span>
             </p>
           </div>
-        </div>
+        </motion.div>
       </section>
 
-      <section className=" md:flex md:mt-3 md:gap-5 ">
-        {/* Mobile */}
-        <div className=" cursor-pointer gap-3  flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   ">
+      <section className=" md:flex  md:mt-3 md:gap-5 ">
+        <motion.div
+          whileInView={{ scale: [0.5, 1.2, 1], opacity: [0, 1] }}
+          transition={{ duration: 1, bounce: 0.3 }}
+          className=" md:w-[50%] cursor-pointer gap-3  flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   "
+        >
           <img
             src={oracle}
             className=" shadow-xl rounded-[10px]  w-full h-max-[300px]"
@@ -258,7 +279,7 @@ const WorkSub = () => {
               </a>
               <span>
                 <a href="https://oracle-heals-pj53ucwyl-lowkeys-projects-d620b88b.vercel.app/">
-                  <i className=" text-gray-500 fa-solid fa-link"></i>
+                  <i className=" text-blue-500 fa-solid fa-link"></i>
                 </a>
               </span>{" "}
             </p>
@@ -275,39 +296,11 @@ const WorkSub = () => {
               </span>
             </p>
           </div>
-        </div>
-        <div className=" cursor-pointer gap-3  flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   ">
-          <img
-            src={oracle}
-            className=" shadow-xl rounded-[10px]  w-full h-max-[300px]"
-            alt=""
-          />
+        </motion.div>
+      </section>
 
-          <div>
-            <p className=" flex gap-3  md:text-2xl">
-              <a href="https://oracle-heals-pj53ucwyl-lowkeys-projects-d620b88b.vercel.app/">
-                ORACLE HEALS
-              </a>
-              <span>
-                <a href="https://oracle-heals-pj53ucwyl-lowkeys-projects-d620b88b.vercel.app/">
-                  <i className=" text-gray-500 fa-solid fa-link"></i>
-                </a>
-              </span>{" "}
-            </p>
-
-            <p className=" flex gap-2 mt-2">
-              <span className=" bg-gray-300 p-1 px-2 rounded-full text-[10px] ">
-                Figma
-              </span>
-              <span className=" bg-gray-300 p-1 px-2 rounded-full text-[10px] ">
-                Reactjs
-              </span>
-              <span className=" bg-gray-300 p-1 px-2 rounded-full text-[10px] ">
-                Tailwind
-              </span>
-            </p>
-          </div>
-        </div>
+      <section className=" saturate-0 opacity-50 mt-[-3rem] ">
+        <AboutCom />
       </section>
     </>
   );

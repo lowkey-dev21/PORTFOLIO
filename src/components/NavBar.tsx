@@ -12,15 +12,16 @@ const navLinks: Nav[] = [
     title: "All",
     path: ".",
   },
-  {
-    id: "about",
-    title: "About",
-    path: "/about",
-  },
+
   {
     id: "work",
     title: "Work",
     path: "/work",
+  },
+  {
+    id: "about",
+    title: "About",
+    path: "/about",
   },
 ];
 
