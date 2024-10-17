@@ -44,7 +44,8 @@
   align-items: center;
   margin: 30px;
   gap: 20px;*/
-  backdrop-filter: blur(30px) !important;
+  z-index: 2000;
+  backdrop-filter: blur(20px) !important;
   box-shadow: 0px 1px 5px rgb(216, 214, 214);
 }
 
@@ -210,13 +211,13 @@
   justify-content: center;
   border-radius: 20px;
 
-    background-color: rgb(249, 248, 245);
+  background-color: rgb(249, 248, 245);
   box-shadow: 0px 1px 5px rgb(215, 214, 216) inset;
 }
 
 .avatar {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   object-position: center;
   object-fit: cover;
   border-radius: 50%;

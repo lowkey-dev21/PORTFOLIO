@@ -74,62 +74,92 @@ const scroller: Scroller[] = [
 const AboutCom = () => {
   return (
     <>
-      <section className=" pt-[4rem] mx-[1.1rem] pb-[2rem]   ">
-        <div className="  about-profile ">
-          {/* Profilr */}
-          <div className=" profile-items ">
-            <img className=" avatar" src={avatar} alt="" />
-            <h1 className="  text-xl  ">Lowkey Dev</h1>
+      <section className=" pt-[4rem] md:gap-[2rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
+        <div className=" md:w-[50%] flex flex-col  ">
+          <div className="   about-profile   ">
+            {/* Profilr */}
+            <div className=" profile-items md:p-[1rem] ">
+              <img
+                className=" avatar md:h-[100px] md:w-[100px] "
+                src={avatar}
+                alt=""
+              />
+              <h1 className="  text-xl md:text-3xl  ">Lowkey Dev</h1>
 
-            <p className=" info text-justify ">
-              I am a web developer fueled by creativity, thrive on building
-              dynamic, responsive applications with React and Node.js.
-              Passionate about turning ideas into interactive experiences.
-              Driven by a love for problem-solving and seamless design.
-            </p>
+              <p className=" info text-justify md:text-2xl md:py-[2rem]  ">
+                I am a web developer fueled by creativity, thrive on building
+                dynamic, responsive applications with React and Node.js.
+                Passionate about turning ideas into interactive experiences.
+                Driven by a love for problem-solving and seamless design.
+              </p>
+            </div>
+          </div>
+
+          <div className=" md:flex hidden text-[12px] md:text-[13px]   overflow-hidden  justify-center  rounded-[10px] initial-card gap-3  w-full items-center  ">
+            <Marquee speed={50} gradient={false}>
+              <div className="  flex items-center gap-3">
+                <div className=" items-center p-1 flex gap-2">
+                  <span className=" font-light "> PERSONAL </span>
+                  <i className="fa-brands  fa-square-js"></i>
+                  <span className=" font-bold"> PORTFOLIO </span>
+                  <span className=" font-light "> PERSONAL </span>
+                  <i className="fa-brands  fa-square-js"></i>
+                  <span className=" font-bold"> PORTFOLIO </span>
+                  <span className=" font-light "> PERSONAL </span>
+                  <i className="fa-brands  fa-square-js"></i>
+                  <span className=" font-bold"> PORTFOLIO </span>
+                  <span className=" font-light "> PERSONAL </span>
+                  <i className="fa-brands  fa-square-js"></i>
+                  <span className=" font-bold"> PORTFOLIO </span>
+                </div>
+              </div>
+            </Marquee>
           </div>
         </div>
 
-        {/* map */}
-        <div>
-          <img className=" map-img" src={map} alt="" />
-        </div>
+        <div className=" md:w-[50%]">
+          {/* map */}
+          <div>
+            <img className=" map-img" src={map} alt="" />
+          </div>
 
-        {/* socials */}
-        <div className=" socials-container ">
-          <div className=" initial-card social-items ">
-            <span>
-              <i className="fa-brands  fa-github"></i>
-            </span>
+          {/* socials */}
+          <div className=" socials-container ">
+            <div className=" initial-card social-items ">
+              <span>
+                <i className="fa-brands  fa-github"></i>
+              </span>
+            </div>
+            <div className="initial-card social-items ">
+              <i className="fa-brands fa-instagram"></i>
+            </div>
           </div>
-          <div className="initial-card social-items ">
-            <i className="fa-brands fa-instagram"></i>
+
+          <div className=" socials-container ">
+            <div className=" initial-card social-items ">
+              <i className="fa-brands fa-whatsapp"></i>
+            </div>
+            <div className="initial-card social-items ">
+              <i className="fa-brands fa-twitter"></i>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div className=" socials-container ">
-          <div className=" initial-card social-items ">
-            <i className="fa-brands fa-whatsapp"></i>
-          </div>
-          <div className="initial-card social-items ">
-            <i className="fa-brands fa-twitter"></i>
-          </div>
-        </div>
-
+      <section className="  md:gap-[2rem] md:mx-[6rem]  mx-[1.5rem] pb-[2rem]  md:flex   ">
         {/* Tools */}
-        <div className=" overflow-hidden initial-card justify-centeR items-cente  mt-[1rem]  rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  ">
-          <div className=" overflow-hidden  justify-center items-center  mt-[1rem] w-[95%]  h-[150px] mb-3 flex mx-auto ">
-            <Marquee speed={20} gradient={false}>
+        <div className=" overflow-hidden initial-card   rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  ">
+          <div className=" overflow-hidden md justify-center items-center  mt-[1rem] w-[95%] h-[300px] mb-3 flex mx-auto ">
+            <Marquee  speed={20} gradient={false}>
               {scroller.map((image) => (
                 <>
-                  <div className=" w-full  flex justify-between">
+                  <div className=" w-full   flex justify-between">
                     <img
                       key={image.title}
                       className="w-[50px] bg-white p-2 rounded-lg  object-cover  h-[50px] mx-4"
                       src={image.img}
                       alt={image.title}
                     />
-                    <span></span>
                   </div>
                 </>
               ))}
@@ -140,16 +170,19 @@ const AboutCom = () => {
             <span className=" text-[10px] text-slate-500 ">
               CURRENTLY USING
             </span>
-            <span className=" text-[14px]">
+            <span className=" text-[14px] md:text-[16px] ">
               React | ExpressJs | MongoDB | Figma.
             </span>
           </p>
         </div>
 
-        <div className=" text-[12px]  overflow-hidden  justify-center  rounded-[10px] initial-card gap-3 flex w-full items-center  ">
-          <Marquee speed={20} gradient={false}>
+        <div className=" md:hidden text-[12px]  overflow-hidden  justify-center  rounded-[10px] initial-card gap-3 flex w-full items-center  ">
+          <Marquee speed={50} gradient={false}>
             <div className="  flex items-center gap-3">
               <div className=" items-center p-1 flex gap-2">
+                <span className=" font-light "> PERSONAL </span>
+                <i className="fa-brands  fa-square-js"></i>
+                <span className=" font-bold"> PORTFOLIO </span>
                 <span className=" font-light "> PERSONAL </span>
                 <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-bold"> PORTFOLIO </span>
