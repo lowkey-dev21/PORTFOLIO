@@ -1,5 +1,4 @@
 import About from "./About";
-import Work from "./Work";
 import {
   expressJs,
   monogo,
