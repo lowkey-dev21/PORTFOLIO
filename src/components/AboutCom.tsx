@@ -69,6 +69,54 @@ const scroller: Scroller[] = [
     title: "Vs Code",
     img: vs,
   },
+  {
+    title: "css",
+    img: css,
+  },
+  {
+    title: "Express.Js",
+    img: expressJs,
+  },
+  {
+    title: "Figma",
+    img: fig,
+  },
+  {
+    title: "Github",
+    img: github,
+  },
+  {
+    title: "HTML",
+    img: html,
+  },
+  {
+    title: "JavaScript",
+    img: javaScript,
+  },
+  {
+    title: "MongoDB",
+    img: monogo,
+  },
+  {
+    title: "Node.Js",
+    img: node,
+  },
+  {
+    title: "React.Js",
+    img: reactJs,
+  },
+  {
+    title: "Tailwind",
+    img: tailwind,
+  },
+  {
+    title: "TypeScript",
+    img: typeScript,
+  },
+  {
+    title: "Vs Code",
+    img: vs,
+  },
 ];
 
 const AboutCom = () => {
@@ -102,15 +150,22 @@ const AboutCom = () => {
                   <span className=" font-light "> PERSONAL </span>
                   <i className="fa-brands  fa-square-js"></i>
                   <span className=" font-bold"> PORTFOLIO </span>
+                  <i className="fa-brands  fa-square-js"></i>
+
                   <span className=" font-light "> PERSONAL </span>
                   <i className="fa-brands  fa-square-js"></i>
                   <span className=" font-bold"> PORTFOLIO </span>
+                  <i className="fa-brands  fa-square-js"></i>
+
                   <span className=" font-light "> PERSONAL </span>
                   <i className="fa-brands  fa-square-js"></i>
                   <span className=" font-bold"> PORTFOLIO </span>
+                  <i className="fa-brands  fa-square-js"></i>
+
                   <span className=" font-light "> PERSONAL </span>
                   <i className="fa-brands  fa-square-js"></i>
                   <span className=" font-bold"> PORTFOLIO </span>
+                  <i className="fa-brands  fa-square-js"></i>
                 </div>
               </div>
             </Marquee>
@@ -150,7 +205,7 @@ const AboutCom = () => {
         {/* Tools */}
         <div className=" overflow-hidden initial-card   rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  ">
           <div className=" overflow-hidden md justify-center items-center  mt-[1rem] w-[95%] h-[300px] mb-3 flex mx-auto ">
-            <Marquee  speed={20} gradient={false}>
+            <Marquee speed={20} gradient={false}>
               {scroller.map((image) => (
                 <>
                   <div className=" w-full   flex justify-between">
@@ -183,15 +238,19 @@ const AboutCom = () => {
                 <span className=" font-light "> PERSONAL </span>
                 <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-bold"> PORTFOLIO </span>
+                <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-light "> PERSONAL </span>
                 <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-bold"> PORTFOLIO </span>
+                <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-light "> PERSONAL </span>
                 <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-bold"> PORTFOLIO </span>
+                <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-light "> PERSONAL </span>
                 <i className="fa-brands  fa-square-js"></i>
                 <span className=" font-bold"> PORTFOLIO </span>
+                <i className="fa-brands  fa-square-js"></i>
               </div>
             </div>
           </Marquee>
