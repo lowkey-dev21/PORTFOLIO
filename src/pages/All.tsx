@@ -17,7 +17,7 @@ const All = () => {
     <>
       <section className=" pb-[4rem] " >
         <About />
-        <section className={`  flex flex-col  mx-[1.1rem]  `}>
+        <section className={`   flex flex-col  mx-[1.1rem]  `}>
           <div className=" initial-card flex items-center justify-between p-5 rounded-[12px]   ">
             <p className=" flex flex-col">
               <span className=" text-[10px]   text-gray-600">2024 CV</span>
@@ -179,3 +179,4 @@ const All = () => {
   );
 };
 export default All;
+ 
