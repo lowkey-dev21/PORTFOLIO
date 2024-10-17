@@ -4,7 +4,7 @@ const WorkCom = () => {
   return (
     <>
       <section
-        className={`  flex flex-col md:mx-[6rem] md:mt-[3rem]    mx-[1.5rem] pt-[7rem]  `}
+        className={`  flex flex-col md:mx-[6rem] md:mt-[3rem] sm:mx-[4rem]    mx-[1.5rem] pt-[7rem]  `}
       >
         <WorkSub />
       </section>

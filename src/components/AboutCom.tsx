@@ -122,7 +122,7 @@ const scroller: Scroller[] = [
 const AboutCom = () => {
   return (
     <>
-      <section className=" pt-[4rem] md:gap-[2rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
+      <section className=" pt-[4rem] md:gap-[2rem] sm:mx-[4rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
         <div className=" md:w-[50%] flex flex-col  ">
           <div className="   about-profile   ">
             {/* Profilr */}
@@ -201,7 +201,7 @@ const AboutCom = () => {
         </div>
       </section>
 
-      <section className="  md:gap-[2rem] md:mx-[6rem]  mx-[1.5rem] pb-[2rem]  md:flex   ">
+      <section className="  md:gap-[2rem] md:mx-[6rem] sm:mx-[4rem]  mx-[1.5rem] pb-[2rem]  md:flex   ">
         {/* Tools */}
         <div className=" overflow-hidden initial-card   rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  ">
           <div className=" overflow-hidden md justify-center items-center  mt-[1rem] w-[95%] h-[300px] mb-3 flex mx-auto ">

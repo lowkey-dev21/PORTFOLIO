@@ -10,4 +10,6 @@ export { default as typeScript } from "../assets/typeScript.png";
 export { default as vs } from "../assets/vs.png";
 export { default as html} from "../assets/html.png"
 export {default as tailwind} from "../assets/tailwind.png"
+export {default as logistic} from "../assets/logistic.png"
+export {default as oracle} from "../assets/oracle.png"
 
