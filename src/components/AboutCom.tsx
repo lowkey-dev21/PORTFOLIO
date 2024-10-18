@@ -127,7 +127,7 @@ const scroller: Scroller[] = [
 const AboutCom = () => {
   return (
     <>
-      <section className=" pt-[4rem] md:gap-[2rem] sm:mx-[4rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
+      <section className=" pt-[6rem] md:gap-[2rem] sm:mx-[4rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
         <div className=" md:w-[50%] flex flex-col  ">
           <motion.div
             initial={{ opacity: 0 }}
@@ -330,7 +330,9 @@ const AboutCom = () => {
         </motion.div>
       </section>
 
-      <section className=" saturate-0 opacity-50  mx-[3rem] md:mx-[12rem]  ">
+      <section className=" saturate-0 opacity-50  mx-[2rem] md:mx-[12rem]  ">
+        {/* overlay */}
+        <div className=" fixed  w-full h-[100%] z-10  mt-2 bg-none "></div>
         <section className=" md:flex md:justify-between gap-4 items-start flex-row-reverse   ">
           <div className=" md:w-[50%]  md:flex md:flex-col justify-between   gap-3  ">
             <motion.div

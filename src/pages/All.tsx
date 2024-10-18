@@ -1,4 +1,3 @@
-import About from "./About";
 import {
   expressJs,
   monogo,
@@ -11,16 +10,328 @@ import {
   javaScript,
   oracle,
   logistic,
+  avatar,
+  map,
+  vs,
+  fig,
+  github,
 } from "../assets/index.ts";
 
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+import Marquee from "react-fast-marquee";
+
+interface Scroller {
+  title: string;
+  img: string;
+}
+const scroller: Scroller[] = [
+  {
+    title: "css",
+    img: css,
+  },
+  {
+    title: "Express.Js",
+    img: expressJs,
+  },
+  {
+    title: "Figma",
+    img: fig,
+  },
+  {
+    title: "Github",
+    img: github,
+  },
+  {
+    title: "HTML",
+    img: html,
+  },
+  {
+    title: "JavaScript",
+    img: javaScript,
+  },
+  {
+    title: "MongoDB",
+    img: monogo,
+  },
+  {
+    title: "Node.Js",
+    img: node,
+  },
+  {
+    title: "React.Js",
+    img: reactJs,
+  },
+  {
+    title: "Tailwind",
+    img: tailwind,
+  },
+  {
+    title: "TypeScript",
+    img: typeScript,
+  },
+  {
+    title: "Vs Code",
+    img: vs,
+  },
+  {
+    title: "css",
+    img: css,
+  },
+  {
+    title: "Express.Js",
+    img: expressJs,
+  },
+  {
+    title: "Figma",
+    img: fig,
+  },
+  {
+    title: "Github",
+    img: github,
+  },
+  {
+    title: "HTML",
+    img: html,
+  },
+  {
+    title: "JavaScript",
+    img: javaScript,
+  },
+  {
+    title: "MongoDB",
+    img: monogo,
+  },
+  {
+    title: "Node.Js",
+    img: node,
+  },
+  {
+    title: "React.Js",
+    img: reactJs,
+  },
+  {
+    title: "Tailwind",
+    img: tailwind,
+  },
+  {
+    title: "TypeScript",
+    img: typeScript,
+  },
+  {
+    title: "Vs Code",
+    img: vs,
+  },
+];
 
 const All = () => {
   return (
     <>
       <section className=" pb-[5rem]  ">
         <section className=" mt-6">
-          <About />
+          <section className=" pt-[4rem] md:gap-[2rem] sm:mx-[4rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
+            <div className=" md:w-[50%] flex flex-col  ">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                className="   about-profile   "
+              >
+                {/* Profile */}
+                <div className=" profile-items md:p-[1rem] ">
+                  <img
+                    className=" avatar md:h-[100px] md:w-[100px] "
+                    src={avatar}
+                    alt=""
+                  />
+                  <h1 className=" mt-4 text-xl md:text-3xl  ">
+                    <Typewriter
+                      words={[
+                        "Lowkey Dev",
+                        "Web Developer",
+                        "Programmer",
+                        "Tech Enthusiast",
+                        "Lowkey Dev",
+                      ]}
+                      loop={5}
+                      cursor
+                      cursorStyle="_"
+                      typeSpeed={70}
+                      deleteSpeed={70}
+                      delaySpeed={2000}
+                    />
+                  </h1>
+
+                  <motion.p
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className=" info  md:text-2xl md:py-[1.5rem]  "
+                  >
+                    I am a web developer fueled by creativity, thrive on
+                    building dynamic, responsive applications with React and
+                    Node.js. Passionate about turning ideas into interactive
+                    experiences. Driven by a love for problem-solving and
+                    seamless design.
+                  </motion.p>
+                </div>
+              </motion.div>
+
+              <div className=" md:flex hidden text-[12px] md:text-[13px]   overflow-hidden  justify-center  rounded-[10px] initial-card gap-3  w-full items-center  ">
+                <Marquee speed={50} gradient={false}>
+                  <div className="  flex items-center gap-3">
+                    <div className=" items-center p-1 flex gap-2">
+                      <span className=" font-light "> PERSONAL </span>
+                      <i className="fa-brands  fa-square-js"></i>
+                      <span className=" font-bold"> PORTFOLIO </span>
+                      <i className="fa-brands  fa-square-js"></i>
+
+                      <span className=" font-light "> PERSONAL </span>
+                      <i className="fa-brands  fa-square-js"></i>
+                      <span className=" font-bold"> PORTFOLIO </span>
+                      <i className="fa-brands  fa-square-js"></i>
+
+                      <span className=" font-light "> PERSONAL </span>
+                      <i className="fa-brands  fa-square-js"></i>
+                      <span className=" font-bold"> PORTFOLIO </span>
+                      <i className="fa-brands  fa-square-js"></i>
+
+                      <span className=" font-light "> PERSONAL </span>
+                      <i className="fa-brands  fa-square-js"></i>
+                      <span className=" font-bold"> PORTFOLIO </span>
+                      <i className="fa-brands  fa-square-js"></i>
+                    </div>
+                  </div>
+                </Marquee>
+              </div>
+            </div>
+
+            <div className=" md:w-[50%]">
+              {/* map */}
+              <div>
+                <motion.img
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 1 }}
+                  className=" map-img"
+                  src={map}
+                  alt=""
+                />
+              </div>
+
+              {/* socials */}
+              <div className=" socials-container ">
+                <motion.div
+                  initial={{ x: "-50vw" }}
+                  animate={{ x: 0 }}
+                  transition={{ type: "spring", stiffness: 120 }}
+                  className=" initial-card social-items "
+                >
+                  <span>
+                    <i className="fa-brands  fa-github"></i>
+                  </span>
+                </motion.div>
+                <motion.div
+                  initial={{ x: "50vw" }}
+                  animate={{ x: 0 }}
+                  transition={{ type: "spring", stiffness: 120 }}
+                  className="initial-card social-items "
+                >
+                  <i className="fa-brands text-red-500 fa-instagram"></i>
+                </motion.div>
+              </div>
+
+              <div className=" socials-container ">
+                <motion.div
+                  drag
+                  dragConstraints={{
+                    left: -100,
+                    right: 100,
+                    top: -100,
+                    bottom: 100,
+                  }}
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className=" initial-card social-items "
+                >
+                  <i className="fa-brands text-green-500  fa-whatsapp"></i>
+                </motion.div>
+                <motion.div
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 1 }}
+                  className="initial-card social-items "
+                >
+                  <i className="fa-brands text-blue-500 fa-twitter"></i>
+                </motion.div>
+              </div>
+            </div>
+          </section>
+
+          <section className="  md:gap-[2rem] md:mx-[6rem] sm:mx-[4rem]  mx-[1.5rem] pb-[2rem]  md:flex   ">
+            {/* Tools */}
+            <motion.div
+              whileInView={{ y: [80, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className=" overflow-hidden initial-card   rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  "
+            >
+              <div className=" overflow-hidden md justify-center items-center  mt-[1rem] w-[95%] h-[300px] mb-3 flex mx-auto ">
+                <Marquee speed={20} gradient={false}>
+                  {scroller.map((image) => (
+                    <>
+                      <div className=" w-full   flex justify-between">
+                        <img
+                          key={image.title}
+                          className="w-[50px] bg-white p-2 rounded-lg  object-cover  h-[50px] mx-4"
+                          src={image.img}
+                          alt={image.title}
+                        />
+                      </div>
+                    </>
+                  ))}
+                </Marquee>
+              </div>
+
+              <p className=" m-4 flex flex-col  ">
+                <span className=" text-[10px] text-slate-500 ">
+                  CURRENTLY USING
+                </span>
+                <span className=" text-[14px] md:text-[16px] ">
+                  React | ExpressJs | MongoDB | Figma.
+                </span>
+              </p>
+            </motion.div>
+
+            <motion.div
+              whileInView={{ y: [80, 0], opacity: [0, 1] }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className=" md:hidden text-[12px]  overflow-hidden  justify-center  rounded-[10px] initial-card gap-3 flex w-full items-center  "
+            >
+              <Marquee speed={50} gradient={false}>
+                <div className="  flex items-center gap-3">
+                  <div className=" items-center p-1 flex gap-2">
+                    <span className=" font-light "> PERSONAL </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-bold"> PORTFOLIO </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-light "> PERSONAL </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-bold"> PORTFOLIO </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-light "> PERSONAL </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-bold"> PORTFOLIO </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-light "> PERSONAL </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                    <span className=" font-bold"> PORTFOLIO </span>
+                    <i className="fa-brands  fa-square-js"></i>
+                  </div>
+                </div>
+              </Marquee>
+            </motion.div>
+          </section>
         </section>
         <section className=" sm:mx-[4rem] mx-[1.5rem] md:mx-[6rem] ">
           <section className=" md:flex md:justify-between gap-4 items-start flex-row-reverse   ">

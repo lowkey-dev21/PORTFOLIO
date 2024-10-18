@@ -12,4 +12,6 @@ export { default as html} from "../assets/html.png"
 export {default as tailwind} from "../assets/tailwind.png"
 export {default as logistic} from "../assets/logistic.png"
 export {default as oracle} from "../assets/oracle.png"
+export {default as avatar} from "../assets/avatar.jpg"
+export { default as map} from "../assets/map.jpg"
 
