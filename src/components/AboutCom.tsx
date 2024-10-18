@@ -218,26 +218,25 @@ const AboutCom = () => {
 
           {/* socials */}
           <div className=" socials-container ">
-            <motion.div
+            <motion.a
               initial={{ x: "-50vw" }}
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 120 }}
               className=" initial-card social-items "
+              href="https://github.com/lowkey-dev21https://github.com/lowkey-dev21/"
             >
-              <a href="https://github.com/lowkey-dev21https://github.com/lowkey-dev21/">
-                <i className="fa-brands  fa-github"></i>
-              </a>
-            </motion.div>
-            <motion.div
+              <i className="fa-brands  fa-github"></i>
+            </motion.a>
+
+            <motion.a
               initial={{ x: "50vw" }}
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 120 }}
               className="initial-card social-items "
+              href="https://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qrhttps://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qr"
             >
-              <a href="https://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qrhttps://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qr">
-                <i className="fa-brands text-red-500 fa-instagram"></i>
-              </a>
-            </motion.div>
+              <i className="fa-brands text-red-500 fa-instagram"></i>
+            </motion.a>
           </div>
 
           <div className=" socials-container ">
@@ -256,16 +255,16 @@ const AboutCom = () => {
             >
               <i className="fa-brands text-green-500  fa-whatsapp"></i>
             </motion.div>
-            <motion.div
+
+            <motion.a
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ duration: 1 }}
               className="initial-card social-items "
+              href="https://x.com/lowkey1921?s=21https://x.com/lowkey1921?s=21"
             >
-              <a href="https://x.com/lowkey1921?s=21https://x.com/lowkey1921?s=21">
-                <i className="fa-brands text-blue-500 fa-twitter"></i>
-              </a>
-            </motion.div>
+              <i className="fa-brands text-blue-500 fa-twitter"></i>
+            </motion.a>
           </div>
         </div>
       </section>
