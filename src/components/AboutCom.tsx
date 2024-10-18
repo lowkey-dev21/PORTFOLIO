@@ -224,9 +224,9 @@ const AboutCom = () => {
               transition={{ type: "spring", stiffness: 120 }}
               className=" initial-card social-items "
             >
-              <span>
+              <a href="https://github.com/lowkey-dev21https://github.com/lowkey-dev21/">
                 <i className="fa-brands  fa-github"></i>
-              </span>
+              </a>
             </motion.div>
             <motion.div
               initial={{ x: "50vw" }}
@@ -234,7 +234,9 @@ const AboutCom = () => {
               transition={{ type: "spring", stiffness: 120 }}
               className="initial-card social-items "
             >
-              <i className="fa-brands text-red-500 fa-instagram"></i>
+              <a href="https://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qrhttps://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qr">
+                <i className="fa-brands text-red-500 fa-instagram"></i>
+              </a>
             </motion.div>
           </div>
 
@@ -260,7 +262,9 @@ const AboutCom = () => {
               transition={{ duration: 1 }}
               className="initial-card social-items "
             >
-              <i className="fa-brands text-blue-500 fa-twitter"></i>
+              <a href="https://x.com/lowkey1921?s=21https://x.com/lowkey1921?s=21">
+                <i className="fa-brands text-blue-500 fa-twitter"></i>
+              </a>
             </motion.div>
           </div>
         </div>
