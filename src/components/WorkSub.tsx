@@ -585,7 +585,7 @@ const WorkSub = () => {
                 </div>
               </div>
             </Marquee>
-          </motion.div>
+          </div>
         </section>
       </section>
     </>
