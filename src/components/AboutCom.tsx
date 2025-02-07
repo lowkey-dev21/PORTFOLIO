@@ -509,7 +509,7 @@ const AboutCom = () => {
                 />
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Mobile */}
           <div
