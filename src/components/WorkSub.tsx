@@ -155,7 +155,7 @@ const WorkSub = () => {
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-          </motion.div>
+          </div>
 
           <div
             

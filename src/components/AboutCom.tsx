@@ -233,7 +233,7 @@ const AboutCom = () => {
               className=" initial-card social-items "
             >
               <i className="fa-brands text-green-500  fa-whatsapp"></i>
-            </motion.div>
+            </div>
 
             <a
              
