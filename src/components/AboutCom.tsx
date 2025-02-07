@@ -1,7 +1,7 @@
 import avatar from "../assets/avatar.jpg";
 import map from "../assets/map.jpg";
 import Marquee from "react-fast-marquee";
-import { motion } from "framer-motion";
+
 import { Typewriter } from "react-simple-typewriter";
 
 import {
