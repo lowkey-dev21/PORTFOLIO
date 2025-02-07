@@ -129,10 +129,7 @@ const AboutCom = () => {
     <>
       <section className=" pt-[6rem] md:gap-[2rem] sm:mx-[4rem] md:mx-[6rem] md:pt-[7rem] mx-[1.5rem] pb-[2rem]  md:flex ">
         <div className=" md:w-[50%] flex flex-col  ">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 2 }}
+          <div
             className="   about-profile   "
           >
             {/* Profile */}
@@ -160,19 +157,16 @@ const AboutCom = () => {
                 />
               </h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+              <p
                 className=" info  md:text-2xl md:py-[1.5rem]  "
               >
                 I am a web developer fueled by creativity, thrive on building
                 dynamic, responsive applications with React and Node.js.
                 Passionate about turning ideas into interactive experiences.
                 Driven by a love for problem-solving and seamless design.
-              </motion.p>
+              </p>
             </div>
-          </motion.div>
+          </div>
 
           <div className=" md:flex hidden text-[12px] md:text-[13px]   overflow-hidden  justify-center  rounded-[10px] initial-card gap-3  w-full items-center  ">
             <Marquee speed={50} gradient={false}>
@@ -206,10 +200,8 @@ const AboutCom = () => {
         <div className=" md:w-[50%]">
           {/* map */}
           <div>
-            <motion.img
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 1 }}
+            <img
+              
               className=" map-img"
               src={map}
               alt=""
@@ -218,62 +210,45 @@ const AboutCom = () => {
 
           {/* socials */}
           <div className=" socials-container ">
-            <motion.a
-              initial={{ x: "-50vw" }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 120 }}
+            <a
+              
               className=" initial-card social-items "
               href="https://github.com/lowkey-dev21https://github.com/lowkey-dev21/"
             >
               <i className="fa-brands  fa-github"></i>
-            </motion.a>
+            </a>
 
-            <motion.a
-              initial={{ x: "50vw" }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 120 }}
+            <a
+              
               className="initial-card social-items "
               href="https://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qrhttps://www.instagram.com/low.key_dev?igsh=MWl4NXk5OTJ2aXBmNw%3D%3D&utm_source=qr"
             >
               <i className="fa-brands text-red-500 fa-instagram"></i>
-            </motion.a>
+            </a>
           </div>
 
           <div className=" socials-container ">
-            <motion.div
-              drag
-              dragConstraints={{
-                left: -100,
-                right: 100,
-                top: -100,
-                bottom: 100,
-              }}
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5 }}
+            <div
+            
               className=" initial-card social-items "
             >
               <i className="fa-brands text-green-500  fa-whatsapp"></i>
             </motion.div>
 
-            <motion.a
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 1 }}
+            <a
+             
               className="initial-card social-items "
               href="https://x.com/lowkey1921?s=21https://x.com/lowkey1921?s=21"
             >
               <i className="fa-brands text-blue-500 fa-twitter"></i>
-            </motion.a>
+            </a>
           </div>
         </div>
       </section>
 
       <section className="  md:gap-[2rem] md:mx-[6rem] sm:mx-[4rem]  mx-[1.5rem] pb-[2rem]  md:flex   ">
         {/* Tools */}
-        <motion.div
-          whileInView={{ y: [80, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+        <div
           className=" overflow-hidden initial-card   rounded-[20px] h-[150px] mb-3 flex flex-col mx-auto  "
         >
           <div className=" overflow-hidden md justify-center items-center  mt-[1rem] w-[95%] h-[300px] mb-3 flex mx-auto ">
@@ -301,11 +276,10 @@ const AboutCom = () => {
               React | ExpressJs | MongoDB | Figma.
             </span>
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          whileInView={{ y: [80, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+        <div
+          
           className=" md:hidden text-[12px]  overflow-hidden  justify-center  rounded-[10px] initial-card gap-3 flex w-full items-center  "
         >
           <Marquee speed={50} gradient={false}>
@@ -330,7 +304,7 @@ const AboutCom = () => {
               </div>
             </div>
           </Marquee>
-        </motion.div>
+        </div>
       </section>
 
       <section className=" saturate-0 opacity-50  mx-[2rem] md:mx-[12rem]  ">
@@ -338,9 +312,8 @@ const AboutCom = () => {
         <div className=" fixed  w-full h-[100%] z-10  mt-2 bg-none "></div>
         <section className=" md:flex md:justify-between gap-4 items-start flex-row-reverse   ">
           <div className=" md:w-[50%]  md:flex md:flex-col justify-between   gap-3  ">
-            <motion.div
-              whileInView={{ x: [200, 0], opacity: [0, 1] }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+            <div
+              
               className=" md:h-[100px]  initial-card flex items-center justify-between p-5 rounded-[12px]   "
             >
               <p className=" flex flex-col">
@@ -366,11 +339,10 @@ const AboutCom = () => {
                   <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              whileInView={{ scale: [0.5, 1.2, 1], opacity: [0, 1] }}
-              transition={{ duration: 0.8, bounce: 0.4 }}
+            <div
+              
               className=" gap-3 hidden md:flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   "
             >
               <img
@@ -403,12 +375,11 @@ const AboutCom = () => {
                   </span>
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
 
-          <motion.div
-            whileInView={{ rotateY: [180, 0], opacity: [0, 1] }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
+          <div
+            
             className=" md:w-[50%] initial-card flex flex-col gap-[2rem] md:py-[3.5rem]  pb-[2rem]  justify-between md:mt-0 mt-4 p-5 rounded-[12px] "
           >
             <p className=" flex flex-col">
@@ -541,9 +512,8 @@ const AboutCom = () => {
           </motion.div>
 
           {/* Mobile */}
-          <motion.div
-            whileInView={{ scale: [0.5, 1.2, 1], opacity: [0, 1] }}
-            transition={{ duration: 0.8, bounce: 0.4 }}
+          <div
+            
             className=" cursor-pointer gap-3 md:hidden flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   "
           >
             <img
@@ -576,13 +546,12 @@ const AboutCom = () => {
                 </span>
               </p>
             </div>
-          </motion.div>
+          </div>
         </section>
 
         <section className=" md:flex  md:mt-3 md:gap-5 ">
-          <motion.div
-            whileInView={{ scale: [0.5, 1.2, 1], opacity: [0, 1] }}
-            transition={{ duration: 1, bounce: 0.3 }}
+          <div
+            
             className=" md:w-[50%] cursor-pointer gap-3  flex flex-col justify-between initial-card p-3  mt-[1rem] md:mt-0 rounded-[10px]   "
           >
             <img
@@ -615,7 +584,7 @@ const AboutCom = () => {
                 </span>
               </p>
             </div>
-          </motion.div>
+          </div>
         </section>
       </section>
     </>
