@@ -7,8 +7,8 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: black;
-  background-color: rgb(243, 241, 238);
+  color: white;
+  background-color: black;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -36,7 +36,7 @@
 }
 
 .navbar {
-  background-color: rgba(249, 248, 245, 0.478);
+  background-color: rgba(32, 25, 4, 0.109);
   /* height: 50px;
   padding: 5px;
   border-radius: 100px;
@@ -46,12 +46,12 @@
   gap: 20px;*/
   z-index: 2000;
   backdrop-filter: blur(20px) !important;
-  box-shadow: 0px 1px 5px rgb(216, 214, 214);
+  box-shadow: 0px 1px 5px rgb(63, 62, 62);
 }
 
 .initial-card {
-  background-color: rgb(249, 248, 245);
-  box-shadow: 0px 1px 5px rgb(216, 214, 214) inset;
+  background-color: rgb(17, 17, 17);
+  
 }
 .nav-container {
   display: flex;
@@ -69,11 +69,11 @@
   padding: 4px;
   border-radius: 50px;
   /* background-color: rgb(247, 245, 241); */
-  background-color: white;
+  background-color: rgb(13, 13, 13);
   width: 100px;
   font-size: large;
   transition-delay: 5ms;
-  box-shadow: 0px 1px 5px rgb(216, 214, 214);
+  /* box-shadow: 0px 1px 5px rgb(216, 214, 214); */
 }
 
 .navbar-bar {
@@ -211,13 +211,13 @@
   justify-content: center;
   border-radius: 20px;
 
-  background-color: rgb(249, 248, 245);
-  box-shadow: 0px 1px 5px rgb(215, 214, 216) inset;
+  background-color: rgb(0, 0, 0);
+  /* box-shadow: 0px 1px 5px rgb(215, 214, 216) inset; */
 }
 
 .avatar {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   object-position: center;
   object-fit: cover;
   border-radius: 50%;

@@ -131,7 +131,7 @@ const AboutCom = () => {
           <div className="about-profile">
             <div className="profile-items md:p-[1rem]">
               <img
-                className="avatar md:h-[100px] md:w-[100px]"
+                className="avatar md:h-[300px] md:w-[300px]"
                 src={avatar}
                 alt=""
               />
@@ -232,7 +232,7 @@ const AboutCom = () => {
                 {scroller.map((image) => (
                   <div key={image.title} className="w-full flex justify-between">
                     <img
-                      className="w-[50px] bg-white p-2 rounded-lg object-cover h-[50px] mx-4"
+                      className="w-[50px] bg-black p-2 rounded-lg object-cover h-[50px] mx-4"
                       src={image.img}
                       alt={image.title}
                     />
@@ -326,13 +326,13 @@ const AboutCom = () => {
                 </p>
 
                 <p className="flex gap-2 mt-2">
-                  <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px] font-bold">
+                  <span className="bg-black p-1 px-2 rounded-full text-[10px] font-bold">
                     Figma
                   </span>
-                  <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px] font-bold">
+                  <span className="bg-black p-1 px-2 rounded-full text-[10px] font-bold">
                     Reactjs
                   </span>
-                  <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px] font-bold">
+                  <span className="bg-black p-1 px-2 rounded-full text-[10px] font-bold">
                     Tailwind
                   </span>
                 </p>
@@ -485,13 +485,13 @@ const AboutCom = () => {
               </p>
 
               <p className="flex gap-2 mt-2">
-                <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px]">
+                <span className="bg-black p-1 px-2 rounded-full text-[10px]">
                   Figma
                 </span>
-                <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px]">
+                <span className="bg-black p-1 px-2 rounded-full text-[10px]">
                   Reactjs
                 </span>
-                <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px]">
+                <span className="bg-black p-1 px-2 rounded-full text-[10px]">
                   Tailwind
                 </span>
               </p>
@@ -520,13 +520,13 @@ const AboutCom = () => {
               </p>
 
               <p className="flex gap-2 mt-2">
-                <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px]">
+                <span className="bg-black p-1 px-2 rounded-full text-[10px]">
                   Figma
                 </span>
-                <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px]">
+                <span className="bg-black p-1 px-2 rounded-full text-[10px]">
                   Reactjs
                 </span>
-                <span className="bg-gray-300 p-1 px-2 rounded-full text-[10px]">
+                <span className="bg-black p-1 px-2 rounded-full text-[10px]">
                   Tailwind
                 </span>
               </p>
